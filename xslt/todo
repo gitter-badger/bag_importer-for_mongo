@@ -1,3 +1,11 @@
 fix import bugs
+datamodel stuff
+  join id with history (and rename to id?)
+  split up history and 
+  fix sourceDocument becomes child of history
+  move id.pending and id.official into seperate group?
+  add pending? (inOnderzoek)
+  add relatedCity
+
 improve speed (batch import???)
 extract common stuff of XSL into lib
