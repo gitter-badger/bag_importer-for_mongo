@@ -3,24 +3,19 @@
   xmlns:xb="http://www.kadaster.nl/schemas/bag-verstrekkingen/extract-deelbestand-lvc/v20090901"
   xmlns:product_LVC="http://www.kadaster.nl/schemas/bag-verstrekkingen/extract-producten-lvc/v20090901"
   xmlns:bag_LVC="http://www.kadaster.nl/schemas/imbag/lvc/v20090901"
-  xmlns:bagtype="http://www.kadaster.nl/schemas/imbag/imbag-types/v20090901"
-  >
+  xmlns:bagtype="http://www.kadaster.nl/schemas/imbag/imbag-types/v20090901" >
 
     <xsl:output method="text" indent="yes"/>
-
-    <!-- <xsl:template match="/">-->
-    <!--   <xsl:apply-templates select="bag_LVC:OpenbareRuimte"/>-->
-    <!-- </xsl:template>-->
 
   <xsl:template match="product_LVC:LVC-product">
 <!-- db.street.drop();-->
     <xsl:apply-templates/>
+    db.street.count();
   </xsl:template>
 
   <xsl:template match="text()"/>
 
   <xsl:template match="bag_LVC:OpenbareRuimte">
-    <!-- <xsl:call-template name="bag_LVC:identificatie"/>-->
 db.street.insert({
     <xsl:apply-templates select="bag_LVC:identificatie"/>
     <xsl:apply-templates select="bag_LVC:openbareRuimteNaam"/>
