@@ -1,4 +1,3 @@
 fix import bugs
 improve speed (batch import???)
 extract common stuff of XSL into lib
-truncate street only at first XML file

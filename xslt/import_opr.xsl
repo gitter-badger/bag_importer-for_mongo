@@ -8,7 +8,7 @@
     <xsl:output method="text" indent="yes"/>
 
   <xsl:template match="product_LVC:LVC-product">
-<!-- db.street.drop();-->
+    db.street.count();
     <xsl:apply-templates/>
     db.street.count();
   </xsl:template>
