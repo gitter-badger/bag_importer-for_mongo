@@ -1,0 +1,34 @@
+db.street.insert({
+    
+    id: 0080300000487372,
+  
+    name: "Sportveld "Het Plein"",
+  
+    type: "Terrein",
+  
+    status: "Naamgeving uitgegeven",
+  
+    history: {
+      
+    active: true,
+  
+    correctionNumber: 0,
+  
+    official: false,
+  
+      valid: {
+        
+    start: 2009051900000100,
+  
+      },
+  
+    sourceDocument: {
+      
+    date: 20090519,
+  
+    number: "2009/9381",
+  
+    },
+  
+    },
+});
